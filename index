@@ -6,8 +6,8 @@
 	<body>
 		<h1>Lista de trabajos hechos en clases</h1>
 		<p><a href="paginas/Banda-de-musica-tabla.html">Primer actividad</a></p>
-		<p><a href="paginas/Hola-Mundo.html">Segunda actividad</a></p>
-		<p><a href="paginas/Mejores-amigos.html">tercera actividad</a></p>
-		<p><a href="paginas/comidas-favoritas.html">cuarta actividad</a></p>
+		<p><a href="paginas/change.html">Segunda actividad</a></p>
+		<p><a href="paginas/Amigos-b.html">tercera actividad</a></p>
+		<p><a href="paginas/musica.html">cuarta actividad</a></p>
 	</body>
 </html>
