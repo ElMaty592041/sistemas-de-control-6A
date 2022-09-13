@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <script type="text/javascript">
+        var numeros=[10,10,10]
+        function promedio(){
+            var promedio=0
+            for (num of numeros){
+                promedio = promedio + num
+        }
+        document.write("el promedio es "+ promedio/3)
+    }
+    promedio()
+        </script>
+        <p><a href="../index.html">Volver</a></p>
+    </head>
+</html>
