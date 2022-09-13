@@ -1,0 +1,23 @@
+!DOCTYPE html> 
+<html>
+    <head>
+        <script type="text/javascript">
+        var val1=10
+        var val2=10
+        function cuentas(){
+            var suma= val1+val2
+            var resta= val1-val2
+            var multiplicacion =val1*val2
+            var division= val1/val2
+            var resto=val1%val2
+            document.write("suma="+suma)
+            document.write("<br/>resta="+resta)
+            document.write("<br/>multiplicacion="+multiplicacion)
+            document.write("<br/>division="+division)
+            document.write("<br/>resto="+resto)
+        }
+        </script>
+        <input type="button"onclick="cuentas()"value="resultado de las cuentas"/>
+        <p><a href="../index.html">Volver</a></p>
+    </head>
+</html>
