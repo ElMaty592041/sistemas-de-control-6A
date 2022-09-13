@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+<script type="text/javascript">
+    var f=60
+    var c=0.000001
+    var pi=3.14
+    var l=0.000001
+    function cuentas(){
+        var multiplicacion=2*pi*f*c
+        var xc=1/multiplicacion
+        var xl=2*pi*f*l;
+        document.write("xc="+xc);
+        document.write("<br/>xl="+xl);
+    }
+</script>
+<input type="button"onclick="cuentas()"value="resultado de las cuentas"/>
+    <p><a href="../index.html">Volver</a></p>
+  </head>
+</html>
