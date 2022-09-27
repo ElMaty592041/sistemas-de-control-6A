@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+
+ <script type="text/javascript">
+    var Frecuencia=275;
+    var Inductancia=87;
+    var Capacitancia=153;
+    var XL= 6.28*Frecuencia*Inductancia;
+    var XC= 1/(6.28*Frecuencia*Capacitancia);
+      function cuentas() {
+       document.write("<br/>Frecuencia= "+Frecuencia );
+       document.write("<br/>Inductancia= "+ Inductancia);
+       document.write("<br/>Capacitancia= "+ Capacitancia);
+       document.write("<br/>XL= "+ XL);
+       document.write("<br/>XC= "+ XC);
+       document.write("<br/><br/><p><a href=\"../index.html\">volver</a></p>");
+                
+       }
+ 
+</script>
+<input type="button" onclick="cuentas()" value="resultado de las cuentas"/>
+</body>
+</html>
