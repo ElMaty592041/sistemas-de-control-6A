@@ -1,0 +1,34 @@
+<html>
+<head>
+    <script type="text/javascript">
+        var h;
+        var m;
+
+    function ep(h,m){
+        valorep= m*9.8*h;
+            return valorep;
+       }
+       
+    function vel(h,m){
+         valorvel= 2*9.8*h/m
+         velraiz= Math.sqrt (valorvel)
+            return velraiz;
+       } 
+   
+    function pedirDatos(){
+        h=Number(prompt("Ingresar el valor de la altura"))
+        m=Number(prompt("Ingresar el valor de la masa"))
+        document.write ("resolucion");document.write ("<br/>");document.write ("<br/>");
+ 		document.write ("Valor de la energia potencial" +ep(h,m));document.write ("<br/>");
+ 		document.write ("Valor de la energia cinematica " +ep(h,m));document.write ("<br/>");
+ 		document.write ("El valor de la velocidad es " +vel(h,m));document.write ("<br/>");
+	        document.write("<br/><br/><p><a href=\"../index.html\">volver</a></p>");
+             }
+ </script>
+ </head>
+   	 <body>
+ <h2> dale click al boton para ingresgar los valores </h2> 
+<input type="button" onclick="pedirDatos()" value="Call Function"> 
+    
+    </body>
+	</html>
