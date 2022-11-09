@@ -1,0 +1,51 @@
+<html>
+<head>
+<script type="text/javascript">
+
+var R;
+var L;
+var C;
+var F;
+ 
+    function XC(F,C){
+        valorxc= 1/ (6.28 * F * C);
+ 		return valorxc;
+}	
+    function XL(F,L){
+        valorxl= 6.28 * F * L;                                         
+    	return valorxl;
+}
+ 		function square(x){
+        return x*x
+}
+		function Z(R,C,L,F){
+			cuadradoz= (square(R) + square((XL(F,L)-XC(F,C))));
+			valorz= Math.sqrt (cuadradoz);
+		return valorz;
+}
+		function phi(R,C,L,F){
+			valorphi=Math.atan (XL(F,L)-XC(F,C)/R);
+		return valorphi; 
+}
+        function pedirDatos(){
+            R = Number(prompt("Ingrese el valor de la resistencia"))
+            L= Number(prompt("Ingrese el valor de la inductancia"))
+            C= Number(prompt("Ingrese el valor de la capacitancia"))
+            F= Number(prompt("Ingrese el valor de la frecuencia"));
+			document.write ("Resolucion");document.write ("<br/>");
+ 			document.write ("El valor de la reactancia capacitiva es " +XC(F,C));document.write ("<br/>");
+ 		 	document.write ("El valor de la reactancia inductiva es " +XL(F,L));document.write ("<br/>");
+		  	document.write ("El valor de la resistencia es " +Z(R,C,L,F));document.write ("<br/>");
+ 			document.write ("El valor de PHI es " +phi(R,C,L,F));document.write ("<br/>");
+ 			document.write("<br/><br/><p><a href=\"../index.html\">volver</a></p>");
+}
+ </script>
+ </head>
+   	 <body>
+ <h2>dale click al boton para ingresar los valores</h2>
+ 
+  <input type="button" onclick="pedirDatos()" value="Call Function"> 
+ 
+    </body>
+   
+	</html>
